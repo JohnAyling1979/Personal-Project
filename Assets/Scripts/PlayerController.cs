@@ -21,6 +21,10 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        SelectAndMovePlayer();
+    }
+
+    void SelectAndMovePlayer() {
         if (Input.GetMouseButtonDown(0))
         {
             Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
